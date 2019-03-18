@@ -1,0 +1,38 @@
+.pagerstyle{
+    color:#444444;
+    background-color:#e5e5e5;
+    font-size:x-small;
+    text-align:right;
+} 
+.pagerstyle select{
+    font-size:x-small;
+} 
+.firstPage{
+    height:16px;
+    width:16px;
+    margin-right:5px;
+} 
+.previousPage{
+    height:16px;
+    width:16px;
+    margin-right:5px;
+}
+.nextPage{
+    height:16px;
+    width:16px;
+    margin-left:5px;
+}  
+.lastPage{
+    height:16px;
+    width:16px;
+    margin-left:5px;
+    margin-right:20px;
+}  
+.gotopage{
+    font-size:x-small;
+    width:20px;
+}
+.noWrap
+{
+	 white-space:nowrap;
+}

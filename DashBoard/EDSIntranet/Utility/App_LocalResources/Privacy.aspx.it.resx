@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Juniors" xml:space="preserve">
+    <value>Minori</value>
+  </data>
+  <data name="MsgPrivacyIntro1" xml:space="preserve">
+    <value>La presente informativa sulla privacy è stata sviluppata da EDS a dimostrazione del proprio impegno nella protezione dei dati personali e delle informazioni raccolte. Questo impegno, relativamente alle attività condotte da EDS in Internet e nella rete intranet, viene attuato alla luce della Politica sulla protezione e la riservatezza dei dati sul Web di EDS. </value>
+  </data>
+  <data name="MsgPrivacyIntro2" xml:space="preserve">
+    <value>In conformità con la Politica sulla protezione e la riservatezza dei dati sul Web di EDS, vengono fornite qui di seguito indicazioni sulle procedure di raccolta e distribuzione delle informazioni adottate da EDS per questo sito Web: </value>
+  </data>
+  <data name="MsgPrivacyJuniors1" xml:space="preserve">
+    <value>EDS non richiede intenzionalmente ai minori di 13 anni che visitano il sito di fornire dati personali. Tuttavia, nei casi in cui tali dati vengano forniti nell'ambito di un utilizzo del sito stesso a scopo formativo, EDS li tratterà come "dati sensibili". I dati forniti da minori al di fuori di uno specifico ambito di formazione verranno immediatamente cancellati.</value>
+  </data>
+  <data name="MsgPrivacyNotification1" xml:space="preserve">
+    <value>Qualora eventuali modifiche apportate da EDS alla propria Politica sulla protezione e la riservatezza dei dati sul Web influenzino in qualunque modo le procedure descritte in questo sito Web, ne verrà data tempestiva ed esplicita notifica sul sito medesimo. In nessun caso tali modifiche a detta Politica potranno essere applicabili a dati precedentemente raccolti attraverso questo sito. Se, in qualunque momento, l'entità responsabile di questo sito "Voice of the Employee" EDS decidesse di utilizzare i dati identificativi di una persona secondo modalità diverse da quelle indicate al momento della loro raccolta, provvederà a darne notifica alla persona interessata tramite posta elettronica offrendo l'opportunità di scegliere se autorizzare il trasferimento di detti dati identificativi e personali.</value>
+  </data>
+  <data name="MsgPrivacyRetention1" xml:space="preserve">
+    <value>I dati trasmessi a questo sito verranno conservati soltanto finché necessario. Non appena lo scopo per cui sono stati raccolti viene raggiunto, essi verranno cancellati in modo riservato, totale e definitivo.</value>
+  </data>
+  <data name="MsgPrivacySecurity1" xml:space="preserve">
+    <value>Questo sito è soggetto a quanto prescritto in tema di sicurezza e confidenzialità in "EDS Global Code of Practice for Privacy and Data Protection" (Codice globale EDS di norme relative alla protezione e alla riservatezza dei dati), in "EDS Enterprise Security Information System" (Sistema informativo EDS per la sicurezza aziendale), in "EDS Code of Business Conduct" (Codice EDS di comportamento aziendale) e in altre normative analoghe sulla sicurezza eventualmente adottate a livello locale.</value>
+  </data>
+  <data name="MsgPrivacyUse1" xml:space="preserve">
+    <value>I dati sono raccolti nel sito tramite un modulo per i commenti e vengono utilizzati esclusivamente per fornire una risposta a una domanda o richiesta specifica. A tale scopo verranno richiesti il nome e cognome, la località e l'indirizzo e-mail del richiedente.</value>
+  </data>
+  <data name="MsgPrivacyUse2" xml:space="preserve">
+    <value>È possibile che EDS utilizzi l'indirizzo IP dell'utente per agevolare l'individuazione dei problemi tramite il server EDS o a scopo di amministrazione del proprio sito Web, per analizzare le tendenze di utilizzo, per tenere traccia dei movimenti compiuti dall'utente e della modalità di utilizzo del sito e per raccogliere informazioni statistiche di carattere generale. Tali dati non sono in alcun modo collegati a informazioni personali che permettano di identificare l'utente. I dati trasmessi al sito possono essere trasferiti all'interno di EDS, e alle sue consociate, conformemente a quanto prescritto in "EDS Global Code of Practice for Privacy and Data Protection" (Codice globale EDS di norme relative alla protezione e alla riservatezza dei dati).</value>
+  </data>
+  <data name="MsgPrivacyUse3" xml:space="preserve">
+    <value>I dati trasmessi a questo sito non verranno comunicati né venduti a terzi, se non specificamente richiesto dall'utente; uniche eccezioni sono rappresentate da ingiunzioni del tribunale o da altri obblighi di natura legale.</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notifica dei cambiamenti</value>
+  </data>
+  <data name="Retention" xml:space="preserve">
+    <value>Conservazione dei dati</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Sicurezza</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Uso</value>
+  </data>
+</root>

@@ -1,0 +1,64 @@
+/* EDSDetailView*/
+
+.EDSDetailView
+{
+    font-family:Verdana;
+    Font-Size:8.35pt;
+    padding:=2;
+    
+}
+
+.FieldHeaderStyle
+{
+	 background-color:#E9ECF1;
+     font-weight:bold;
+     text-align:Right;
+     white-space:nowrap;
+	
+}
+.HeaderStyle
+{
+    background-color: #5D7B9D;
+    color: White;
+    font-weight: bold;
+    white-space:nowrap;
+    text-align:Right;
+    width:33%;  
+               
+}
+
+.AlternatingRowStyle
+{
+    background-color: White;
+    color:#284775;
+}
+
+.RowStyle
+{
+	 background-color:#F7F6F3;
+     Color:#333333;
+}
+
+.EditRowStyle
+{
+	 background-color:#E2DED6;
+    white-space:nowrap;
+}
+
+.CommandRowStyle
+{
+	background-color: #5D7B9D;
+    color: White;
+    font-weight: bold;
+    white-space:nowrap;
+}
+
+
+	
+        
+        
+       
+        
+       
+       
+        

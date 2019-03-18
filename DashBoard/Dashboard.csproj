@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF4FB9E9-9BDE-44FE-AD30-EBAE89DD2A11}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDSIntranet</RootNamespace>
+    <AssemblyName>EDSIntranet</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\EDSIntranet\com\css\Reports.css" />
+    <Content Include="DashboardAlerts.aspx" />
+    <Content Include="HistoricalReporting.aspx" />
+    <Content Include="Maintenance.aspx" />
+    <Content Include="Reports\DashboardReports.aspx" />
+    <Content Include="Monitors\MonitorDetails.aspx" />
+    <Content Include="Monitors\MonitorListTree.aspx" />
+    <Content Include="Monitors\MonitorDetailsList.aspx" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Reports\TestCascade.aspx" />
+    <Content Include="Reports\TestCascadeService.asmx" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_LocalResources\Admin\SQLQuery.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SQLQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\Admin\SQLQuery.aspx.designer.cs">
+      <DependentUpon>SQLQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.es.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.fr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.it.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.it.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.ja.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.ja.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.pt.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.pt.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.zh-cn.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.zh-cn.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.zh-tw.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.zh-tw.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Web.sitemap.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Web.sitemap.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Web.sitemap.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Web.sitemap.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Web.sitemap.es.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Web.sitemap.es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Web.sitemap.zh-cn1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Web.sitemap.zh-cn.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardAlerts.aspx.cs">
+      <DependentUpon>DashboardAlerts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardAlerts.aspx.designer.cs">
+      <DependentUpon>DashboardAlerts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDetails.aspx.cs">
+      <DependentUpon>DashboardDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardDetails.aspx.designer.cs">
+      <DependentUpon>DashboardDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommentsConfirm.aspx.cs">
+      <DependentUpon>CommentsConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardForWindow.aspx.cs">
+      <DependentUpon>DashboardForWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardForWindow.aspx.designer.cs">
+      <DependentUpon>DashboardForWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardHelp.aspx.cs">
+      <DependentUpon>DashboardHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardHelp.aspx.designer.cs">
+      <DependentUpon>DashboardHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Common\ContactLookup.cs" />
+    <Compile Include="EDSIntranet\Common\Logger.cs" />
+    <Compile Include="HistoricalReporting.aspx.cs">
+      <DependentUpon>HistoricalReporting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistoricalReporting.aspx.designer.cs">
+      <DependentUpon>HistoricalReporting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance.aspx.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maintenance.aspx.designer.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitors\MonitorDataAccess.cs" />
+    <Compile Include="Monitors\MonitorDataAccessLayer.cs" />
+    <Compile Include="EDSIntranet\Common\MonitorTracker.cs" />
+    <Compile Include="Monitors\Application.cs" />
+    <Compile Include="Reports\Instance.cs" />
+    <Compile Include="Reports\Monitor.cs" />
+    <Compile Include="Reports\MonitorName.cs" />
+    <Compile Include="Reports\Priority.cs" />
+    <Compile Include="Reports\ReportsDataAccess.cs" />
+    <Compile Include="Reports\ReportsHelper.cs" />
+    <Compile Include="EDSIntranet\Common\SQLHelper.cs" />
+    <Compile Include="EDSIntranet\Common\Utilities.cs" />
+    <Compile Include="Reports\SAAlertDataAccessLayer.cs" />
+    <Compile Include="EDSIntranet\UserControls\PageUtilities.ascx.cs">
+      <DependentUpon>PageUtilities.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\PageUtilities.ascx.designer.cs">
+      <DependentUpon>PageUtilities.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Error\ErrorInfo.cs" />
+    <Compile Include="EDSIntranet\Error\GenericError.aspx.cs">
+      <DependentUpon>GenericError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Error\GenericError.aspx.designer.cs">
+      <DependentUpon>GenericError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\CommentsConfirm.aspx.cs">
+      <DependentUpon>CommentsConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Base\ErrorPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\PageFooter.ascx.cs">
+      <DependentUpon>PageFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\PageFooter.ascx.designer.cs">
+      <DependentUpon>PageFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\NavMenu.ascx.cs">
+      <DependentUpon>NavMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\NavMenu.ascx.designer.cs">
+      <DependentUpon>NavMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\PageContact.ascx.cs">
+      <DependentUpon>PageContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\PageContact.ascx.designer.cs">
+      <DependentUpon>PageContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\PageMenu.ascx.cs">
+      <DependentUpon>PageMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\UserControls\PageMenu.ascx.designer.cs">
+      <DependentUpon>PageMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Base\CorePageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Common\Globals.cs" />
+    <Compile Include="EDSIntranet\Base\HomePageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Base\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Base\UtilityPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Error\AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Error\AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Error\PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Error\PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\Preferences.aspx.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\Preferences.aspx.designer.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDSIntranet\Utility\Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IntranetCore.master.cs">
+      <DependentUpon>IntranetCore.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IntranetCore.master.designer.cs">
+      <DependentUpon>IntranetCore.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitors\MonitorDetails.aspx.cs">
+      <DependentUpon>MonitorDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitors\MonitorDetails.aspx.designer.cs">
+      <DependentUpon>MonitorDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitors\MonitorListTree.aspx.cs">
+      <DependentUpon>MonitorListTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitors\MonitorListTree.aspx.designer.cs">
+      <DependentUpon>MonitorListTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitors\MonitorDetailsList.aspx.cs">
+      <DependentUpon>MonitorDetailsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitors\MonitorDetailsList.aspx.designer.cs">
+      <DependentUpon>MonitorDetailsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDashboard.aspx.cs">
+      <DependentUpon>MyDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDashboard.aspx.designer.cs">
+      <DependentUpon>MyDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences.aspx.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preferences.aspx.designer.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\DashboardReports.aspx.cs">
+      <DependentUpon>DashboardReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DashboardReports.aspx.designer.cs">
+      <DependentUpon>DashboardReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScriptManager.cs" />
+    <Compile Include="Reports\TestCascade.aspx.cs">
+      <DependentUpon>TestCascade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TestCascade.aspx.designer.cs">
+      <DependentUpon>TestCascade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TestCascadeService.asmx.cs">
+      <DependentUpon>TestCascadeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Web.sitemap.es.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Web.sitemap.es.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Web.sitemap.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Web.sitemap.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Web.sitemap.zh-cn.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Web.sitemap.zh-cn1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDSIntranet\Utility\About.aspx" />
+    <Content Include="EDSIntranet\Utility\Map.aspx" />
+    <Content Include="EDSIntranet\Utility\Privacy.aspx" />
+    <Content Include="IntranetCore.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDSIntranet\UserControls\PageFooter.ascx" />
+    <Content Include="EDSIntranet\UserControls\NavMenu.ascx" />
+    <Content Include="EDSIntranet\UserControls\PageContact.ascx" />
+    <Content Include="EDSIntranet\UserControls\PageMenu.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="App_Themes\EDSIntranet\com\css\forms.css" />
+    <Content Include="App_Themes\EDSIntranet\com\css\layout.css" />
+    <Content Include="App_Themes\EDSIntranet\com\css\nav.css" />
+    <Content Include="App_Themes\EDSIntranet\com\css\page.css" />
+    <Content Include="App_Themes\EDSIntranet\com\css\print.css" />
+    <Content Include="App_Themes\EDSIntranet\com\img\body_bg.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\eds_logo_wht.gif">
+    </Content>
+    <Content Include="App_Themes\EDSIntranet\com\img\header_bg.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\homepage.jpg" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_access.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_back.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_back_x.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_bmp.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_bookmark_css.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_calendar.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_close.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_collapse.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_css.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_doc.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_email.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_email_css.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_expand.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_gif.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_hlp.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_html.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_jpg.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_js.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_lock.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_lock_sm.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_more_arrow.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_mp3.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_mpg.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_mpp.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_next.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_next_x.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_pdf.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_png.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_pps.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_ppt.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_print_css.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_ram.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_rss.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_swf.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_top.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_txt.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_wmp.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_www.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_xls.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_xml.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_yield.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\ico_zip.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\image_sample1.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\logo_p.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\navbar_bg.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\navbar_bg_on.gif" />
+    <Content Include="EDSIntranet\Common\com\js\utils.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\EDSIntranet\CheckBoxList.skin" />
+    <Content Include="App_Themes\EDSIntranet\CustomControls.skin" />
+    <Content Include="App_Themes\EDSIntranet\DetailsView.skin" />
+    <Content Include="App_Themes\EDSIntranet\GridView.skin" />
+    <Content Include="App_Themes\EDSIntranet\ValidationSummary.skin" />
+    <Content Include="App_GlobalResources\Web.sitemap.de.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Web.sitemap.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Common.de.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.es.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.es.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.fr.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.fr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.it.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.it.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.ja.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.ja.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.pt.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.zh-cn.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.zh-cn.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.zh-tw.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.zh-tw.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\About.aspx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Comments.aspx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\CommentsConfirm.aspx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Preferences.aspx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Utility\App_LocalResources\Privacy.aspx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="App_Themes\EDSIntranet\com\img\Thumbs.db" />
+    <Content Include="EDSIntranet\doc\Dashboard_For_windows_User_Guide.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="EDSIntranet\doc\DashboardMonitorhelp.xlsx" />
+    <None Include="EDSIntranet\EDSIntranet.cd" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web.sitemap" />
+    <Content Include="App_Themes\EDSIntranet\GridDetail.css" />
+    <Content Include="App_Themes\EDSIntranet\GridView.css" />
+    <Content Include="EDSIntranet\Error\GenericError.aspx" />
+    <Content Include="EDSIntranet\Utility\CommentsConfirm.aspx" />
+    <Content Include="EDSIntranet\Error\AccessDenied.aspx" />
+    <Content Include="EDSIntranet\Error\PageNotFound.aspx" />
+    <Content Include="EDSIntranet\Images\Padlock.gif" />
+    <None Include="Properties\PublishProfiles\Dev.pubxml" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EDS.Intranet.ServerControls\EDS.Intranet.ServerControls.csproj">
+      <Project>{F29CF749-2A85-44C8-AAB7-DF6EEB7C4FEA}</Project>
+      <Name>EDS.Intranet.ServerControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDSIntranet\Images\FirstPage2D.gif" />
+    <Content Include="EDSIntranet\Images\FirstPage3D.gif" />
+    <Content Include="EDSIntranet\Images\LastPage2D.gif" />
+    <Content Include="EDSIntranet\Images\LastPage3D.gif" />
+    <Content Include="EDSIntranet\Images\NextPage2D.gif" />
+    <Content Include="EDSIntranet\Images\NextPage3D.gif" />
+    <Content Include="EDSIntranet\Images\PrevPage2D.gif" />
+    <Content Include="EDSIntranet\Images\PrevPage3D.gif" />
+    <Content Include="EDSIntranet\Images\SortAscending2D.gif" />
+    <Content Include="EDSIntranet\Images\SortAscending3D.gif" />
+    <Content Include="EDSIntranet\Images\SortDescending2D.gif" />
+    <Content Include="EDSIntranet\Images\SortDescending3D.gif" />
+    <Content Include="EDSIntranet\UserControls\PageUtilities.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDSIntranet\Images\eds_logo_wht.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\IntranetCore.master.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\Images\ico_yield.gif" />
+    <Content Include="EDSIntranet\Images\ico_yield_transp.gif" />
+    <Content Include="EDSIntranet\Utility\Comments.aspx" />
+    <Content Include="EDSIntranet\Utility\Preferences.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\IntranetCore.master.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\IntranetCore.master.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\IntranetCore.master.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\IntranetCore.master.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\IntranetCore.master.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\IntranetCore.master.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\IntranetCore.master.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\IntranetCore.master.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Themes\EDSIntranet\com\img\header_bg_blue.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\header_bg_grey.gif" />
+    <Content Include="App_Themes\EDSIntranet\com\img\wrapbackground.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageFooter.ascx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageUtilities.ascx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="App_Themes\EDSIntranet\com\css\datalayout.css" />
+    <Content Include="DashboardDetails.aspx" />
+    <Content Include="Comments.aspx" />
+    <Content Include="CommentsConfirm.aspx" />
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.ja.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.pt.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EDSIntranet\UserControls\App_LocalResources\PageContact.ascx.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="Main.aspx" />
+    <Content Include="MyDashboard.aspx" />
+    <Content Include="Preferences.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Comments.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\About.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Admin\SQLQuery.aspx" />
+    <Content Include="App_LocalResources\CommentsConfirm.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DashboardForWindow.aspx" />
+    <Content Include="DashboardHelp.aspx" />
+    <Content Include="EDSIntranet\Images\w_alert.gif" />
+    <Content Include="EDSIntranet\Images\w_alert_details.gif" />
+    <Content Include="EDSIntranet\Images\w_layout_1.gif" />
+    <Content Include="EDSIntranet\Images\w_layout_21.gif" />
+    <Content Include="Error.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64388</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DashboardProject/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

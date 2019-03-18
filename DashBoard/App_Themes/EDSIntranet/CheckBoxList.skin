@@ -1,0 +1,16 @@
+<%--
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+--%>
+
+<asp:CheckBoxList runat="server" 
+        Font-Name="Verdana
+        Width="100%" 
+        RepeatLayout="Table"
+        BackColor="#E2DED6" 
+        TextAlign="Left" 
+        color  = "red"
+/>

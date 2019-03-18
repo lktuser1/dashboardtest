@@ -1,0 +1,72 @@
+/* -------------------------------------------------------
+datalayout.css
+last modified:  11/29/2008 by Tanweer
+last validated: 11/29/2008 by Tanweer
+------------------------------------------------------- */
+
+table.tablecontainer 
+{
+	width:250px;
+	border: solid 1px #ccc;
+	display:inline;
+	position:relative;
+	vertical-align:top;
+	margin-right:20px;
+	margin-bottom:20px;
+	border-collapse:collapse;
+	
+	
+/*		
+	align=center cellpadding='3' cellspacing='0' style='border-collapse: collapse; margin-right:20px; margin-bottom:20px; margin-right:20px; margin-bottom:20px; vertical-align:top; display: inline ;
+*/
+}
+
+table.tablecontainer td 
+{
+	border: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #ccc;	
+	text-align: left;
+}
+
+tr.applicationHeader
+{
+	font-weight:bold;
+     text-align:center;
+}
+
+table.preferences
+{
+	width:520px;
+	border: solid 1px #ccc;
+	vertical-align:top;
+	margin-right:20px;
+	margin-bottom:20px;
+	border-collapse:collapse;
+}
+
+table.preferences td
+{
+	border-width: 0px 0px 0px 0px;
+}
+
+table.preferences input
+{
+	text-align:center;
+}
+
+table.preferences th
+{ 
+	background-color: #00344d;
+	font-weight:bold;
+	text-align:center;
+	color: #fff;
+}
+
+th.center
+{ 
+	background-color:Transparent;
+	font-weight:bold;
+	text-align: center;
+	color:Black;
+}

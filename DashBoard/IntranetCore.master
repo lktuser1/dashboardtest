@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IntranetCore.master.cs" Inherits="EDS.Intranet.IntranetCore" %>
+<%@ Register Src="~/EDSIntranet/UserControls/PageUtilities.ascx" TagName="PageUtilities" TagPrefix="EDS" %>
+<%@ Register Src="~/EDSIntranet/UserControls/NavMenu.ascx" TagName="NavMenu" TagPrefix="EDS" %>
+<%@ Register Src="~/EDSIntranet/UserControls/PageMenu.ascx" TagName="PageMenu" TagPrefix="EDS" %>
+<%@ Register Src="~/EDSIntranet/UserControls/PageFooter.ascx" TagName="PageFooter" TagPrefix="EDS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 5.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="htmlTag" xmlns="http://www.w3.org/1999/xhtml"  dir="<%$ Resources:HtmlDir %>" runat="server">
+<head id="htmlHead" runat="server">
+    <meta http-equiv="Content-Type"  content="text/html; charset=utf-8" />
+    <asp:PlaceHolder id="RegisteredClientScriptBlocks" runat="server" />
+    <title></title>
+    <script src="/Scripts/jquery-1.9.1.js"></script>
+    
+</head>
+<body id="pageBody" class="core" runat="server">
+    <div id="wrap" >
+        <a title="top" id="top"></a>
+        <p id="browseralert" class="hide noprint">
+            <asp:Localize ID="Localize1" runat="server" Text="<%$ Resources:RawContentWarning %>" />
+        </p>
+        <div  id="header">
+            <!-- Today's date -->
+            <div id="global-utils">
+                <asp:Literal ID="CurrentDateCtl" runat="server">
+                </asp:Literal>
+            </div>
+            <!-- About and Contact Us links on the top right -->
+            <div id="site-utils">
+                <ul>
+                  <li><a id="aboutLink" href="About.aspx" runat="server"><asp:Localize ID="AboutTag" runat="server" Text="<%$ Resources:UtilityAboutThisSite %>"/></a>|</li>
+                  <li><a id="contactLink" href="Comments.aspx" onclick="formsLocation(this.href);return false;" accesskey="6" runat="server" ><asp:Localize ID="ContactTag" runat="server" Text="<%$ Resources:UtilityContactUs %>"/></a></li>
+                </ul>
+            </div>
+            <!-- Logo and Site Name -->
+            <div id="site-title">
+                
+                <img src="~/EDSIntranet/Images/eds_logo_wht.png" alt="EDS, an HP company, logo" width="193" height="50" id="logo" title="HP" runat="server"/>
+                <a href="~/Main.aspx" accesskey="1" id="hpLink" title="<%$ Resources:TooltipReturnHome %>" runat="server">
+                <asp:Literal ID="SiteNameTag" runat="server" Text="<%$ Resources:SiteName %>"/></a>
+                <p id="tagline"><asp:Literal ID="SiteTagLineTag" runat="server" Text="<%$ Resources:SiteTagLine %>"/></p>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <asp:SiteMapDataSource runat="server" ID="srcNavMenu" SiteMapProvider="MainNavigationSiteMap" ShowStartingNode="false" />
+        <asp:SiteMapDataSource runat="server" ID="srcPageMenu" SiteMapProvider="MainNavigationSiteMap" ShowStartingNode="false"  StartingNodeOffset="1" />
+
+            
+        <div id="content">
+            <!-- START main content -->
+            <table   border="0" width="100%" id="table1">
+	            <tr>
+		            <td class="noleftpadding">
+
+                        <EDS:PageMenu ID="PageMenu" runat="server" />
+                        <EDS:PageUtilities id="PageUtils" runat="server" ShowBreadcrumb="false" ShowPrintEmailBookmark="false" />
+                        <!--
+                        <table border="1" width="10px" style="border:solid;color:black;">
+                            <tr>
+                                <td>
+                                    Detail Description:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Technical Description
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                        -->
+                    </td>
+	                <td width="100%">
+                       
+                           <h1><asp:Literal ID="PageTitleTag" runat="server"></asp:Literal>
+                                <span id="pageSubTitle" runat="server"><em class="subhead"><asp:Literal ID="PageSubtitleTag" runat="server"/></em></span></h1>
+                            <div id="lastupdated" runat="server">
+                                <p class="date"><span class="accenttext"><asp:Literal ID="LastUpdatedTag" runat="server" Text='<%$ Resources:LastUpdated %>'/></span>
+                                    <asp:Literal ID="PageLastUpdatedCtl" runat="server"></asp:Literal>
+                                </p>
+                            </div>
+                            <BR/>
+                            <asp:contentplaceholder id="MainContent" runat="server" />
+                       
+                    </td>
+                    <!-- Right content -->
+                    <!--<td  style="white-space: nowrap" bgcolor="#f3f3f3">
+                        border-left: 1px solid grey;"
+                    -->
+                    <td  style="white-space: nowrap;"  >
+                        <br />
+                            <h1><asp:Literal ID="PageAlertTag" runat="server"></asp:Literal></h1>
+                         <h1><asp:Literal ID="RightPageTitleTag" runat="server"></asp:Literal></h1>
+                           
+                         
+                          <h1><asp:Literal ID="Literal1" runat="server"></asp:Literal><span id="Span1" runat="server"><em class="subhead"><asp:Literal ID="Literal2" runat="server"/></em></span></h1>
+                             <asp:contentplaceholder id="RightContent" runat="server"></asp:contentplaceholder>
+                    </td>
+                    
+                </tr>
+            </table>
+            
+            <!-- END main content -->  
+        </div>
+    
+        <div style="background-color:lightgray;" class="clear">
+        </div>
+        <!-- Footer -->
+        <EDS:PageFooter ID="PageFooter" runat="server" />
+    </div>
+</body>
+</html>

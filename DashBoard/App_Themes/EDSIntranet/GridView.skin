@@ -1,0 +1,54 @@
+<%@ Register assembly="EDS.Intranet.ServerControls" namespace="EDS.Intranet.ServerControls"  tagprefix="edsControls" %>  
+
+<asp:GridView runat="server" 
+            Font-Name="Verdana"
+            Font-Size="8.35pt" Cellpadding="3"
+            HeaderStyle-BackColor="#00344d"
+            HeaderStyle-ForeColor="White"
+            HeaderStyle-Font-Bold="True"
+            RowStyle-BackColor="#F7F6F3"
+            RowStyle-ForeColor="#333333"  
+            AlternatingRowStyle-BackColor="White"
+            AlternatingRowStyle-ForeColor="#284775"  
+            FooterStyle-BackColor="#5D7B9D"
+            FooterStyle-ForeColor="White"
+            FooterStyle-Font-Bold="True"
+            SelectedRowStyle-BackColor="#E2DED6"
+            SelectedRowStyle-ForeColor="#333333"
+            SelectedRowStyle-Font-Bold="True"
+            PagerStyle-BackColor="#00344d"
+            PagerStyle-ForeColor="White"
+            PagerStyle-HorizontalAlign="Left"
+            PagerSettings-Mode="Numeric"
+            PagerSettings-Position="Bottom" >
+</asp:GridView>
+
+<edsControls:edsGridView runat="server" 
+            Font-Name="Verdana"
+            Font-Size="8.35pt" Cellpadding="3"
+            HeaderStyle-BackColor="#00344d"
+            HeaderStyle-ForeColor="White"
+            HeaderStyle-Font-Bold="True"
+            RowStyle-BackColor="#F7F6F3"
+            RowStyle-ForeColor="#333333"  
+            AlternatingRowStyle-BackColor="White"
+            AlternatingRowStyle-ForeColor="#284775"  
+            FooterStyle-BackColor="#5D7B9D"
+            FooterStyle-ForeColor="White"
+            FooterStyle-Font-Bold="True"
+            SelectedRowStyle-BackColor="#E2DED6"
+            SelectedRowStyle-ForeColor="#333333"
+            SelectedRowStyle-Font-Bold="True"
+            PagerStyle-BackColor="#00344d"
+            PagerStyle-ForeColor="White"
+            PagerStyle-HorizontalAlign="Left"
+            PagerSettings-Mode="Numeric"
+            PagerSettings-Position="Bottom" >
+            <PagerTemplate>
+            </PagerTemplate>
+</edsControls:edsGridView>
+
+
+
+
+

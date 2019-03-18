@@ -1,0 +1,161 @@
+/* -------------------------------------------------------
+print.css
+last modified:  04/29/2007 by SR
+last validated: 04/29/2007 by SR
+------------------------------------------------------- */
+@media print 
+{
+	
+body {
+	background-color: #fff;
+	font-family: Verdana,Arial,Helvetica,Sans-serif;
+	line-height: 1.35em;
+	font-size: 11pt;
+	color: #000;
+	}
+
+/*========= Layout =========*/
+
+#browseralert, #navbarmenu, #header ul, #subnav, #page-footer, #sidebar, #pageutils, #validSummary, #site-utils, #searchcentre, #global-utils  {
+	display: none;
+	}
+
+#header {
+	margin-bottom: 45px;
+	margin-top: 10px;
+}
+
+#header div#site-title a { 
+	font-size: 225%;
+	font-family:Verdana,Arial,Helvetica,sans-serif !important;
+	text-decoration: none;
+	font-weight: bold;
+	}
+	
+#header img { 
+	float:left;
+	padding-right: 6px;
+	vertical-align: text-top;
+	}
+
+#header #logo img {
+	border: none;
+	}
+	
+#wrap {
+	width: auto;
+	margin: 0;
+	padding: 0 10px 0 0;
+	}
+	
+#side {
+	position: relative;
+	float: right;
+	width: 190px;
+	border: 1px solid #000;
+	padding: 2px 5px;
+	margin-left: 5px;
+}
+
+#side h2 {
+	font-size: 90%;
+	margin-bottom: -15px;
+	padding-bottom: 0;
+}
+	
+
+/*========= Headers =========*/	
+h1 {
+	font-size: 175%;
+	font-family:Verdana,Arial,Helvetica,sans-serif !important;
+	}
+	
+h2 {
+	font-size: 130%;
+	margin-bottom: 0;
+	}
+	
+h3 {
+	font-size: 110%;
+	}
+
+h4 {
+	font-size: 95%;
+	}
+	
+h5 {
+	margin-bottom: 0;
+}
+
+h1 em.subhead {
+	display: block;
+	font-style: normal;
+	font-size: 75%;
+	margin-top: .25em;
+	}
+
+h2.contact {
+	font-size: 95%;
+}
+
+/*========= Lists =========*/
+	
+dt {
+	font-weight: bold;
+	}
+	
+dl.topics dd ul li {
+	display: inline;
+	list-style-type: none;
+	font-weight: normal;
+	font-size: 90%
+}
+
+ul.anchors {
+	display: none;
+}
+
+/*========= Paragrahs =========*/
+
+p.date { 
+	text-transform:capitalize; 
+	font-size: 80%;
+	}
+	
+p.download {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/*========= Images =========*/
+
+img {
+	border: none;
+	}
+
+img.totop, img.morearrow { display: none; }
+
+/*========= Miscellaneous =========*/
+.url {
+	font-size: 85%;
+	}
+	
+.noprint {
+	display: none;
+	}
+
+.right {
+	float: right;
+	margin: 4px 0 4px 10px;
+	}
+	
+.left {
+	float: left;
+	margin: 4px 10px 4px 0;
+	}
+
+.printOnly {
+	text-align: left;
+}
+
+}

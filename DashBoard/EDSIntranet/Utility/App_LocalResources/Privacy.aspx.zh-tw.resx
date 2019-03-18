@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Juniors" xml:space="preserve">
+    <value>青少年</value>
+  </data>
+  <data name="MsgPrivacyIntro1" xml:space="preserve">
+    <value>EDS 建立此隱私權聲明的目的，是為了展示我們對隱私權與資料保護的堅定承諾。即 EDS 在網際網路及內部網路上的活動均會透過 EDS 網站隱私權與資料保護原則來實行。 </value>
+  </data>
+  <data name="MsgPrivacyIntro2" xml:space="preserve">
+    <value>依據 EDS 網站隱私權與資料保護原則，下列敘述披露了此網站收集和散佈資訊的實務： </value>
+  </data>
+  <data name="MsgPrivacyJuniors1" xml:space="preserve">
+    <value>我們並不刻意在這個網站收集青少年（未滿 13 歲）的資訊，但為了教育的目的，我們會將這些提交的資料視為「機密資料」。已知是來自青少年的資料，以及不是特別為教育之目的而提交的資料會立刻被刪除。</value>
+  </data>
+  <data name="MsgPrivacyNotification1" xml:space="preserve">
+    <value>EDS 根據其 EDS 網站隱私權與資料保護原則所造成的、可能會影響在這個網站上所描述之實務的任何變更都將會張貼到此網站上的醒目位置。對於先前透過此網站所收集的資料，絕不會套用對此原則進行的任何這類變更。在任何時候，只要「EDS 員工的心聲 (EDS Voice of the Employee)」決定採取不同於當初在收集資訊時所陳述的方式來使用可識別個人資訊，就會以電子郵件的方式通知您，讓您對於傳輸的可識別個人資訊能夠進行選擇。</value>
+  </data>
+  <data name="MsgPrivacyRetention1" xml:space="preserve">
+    <value>提交至此網站的資料僅會保留到必要的時間為止。達成目的後，資料會在機密的狀態下被完全刪除。</value>
+  </data>
+  <data name="MsgPrivacySecurity1" xml:space="preserve">
+    <value>此網站受限於 EDS 隱私權與資料保護全球業務守則、EDS 企業安全資訊系統、EDS 業務行為守則及可能在當地適用的其他安全原則對於安全性與機密性的要求。</value>
+  </data>
+  <data name="MsgPrivacyUse1" xml:space="preserve">
+    <value>本網站會透過意見表收集資訊，且僅會用於回答您的特定問題或回覆您的特定要求。根據這個目的，我們會要求您提供姓名、位置及電子郵件地址。</value>
+  </data>
+  <data name="MsgPrivacyUse2" xml:space="preserve">
+    <value>我們會透過使用者 IP 位址來協助診斷伺服器的問題和管理網站，以分析趨勢、追蹤使用者的行動，以及廣泛收集統計資訊。這些資料並沒有連結至任何可識別個人資訊。提交至網站的資料可能會根據 EDS 隱私權與資料保護全球業務守則傳送至 EDS，包括傳送至分公司。</value>
+  </data>
+  <data name="MsgPrivacyUse3" xml:space="preserve">
+    <value>除非使用者有特定要求，否則提交至此網站的資料將不會共用或出售給任何外部團體；唯一的例外是法院命令或其他的法律責任。</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>變更通知</value>
+  </data>
+  <data name="Retention" xml:space="preserve">
+    <value>保管</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>安全性</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+</root>

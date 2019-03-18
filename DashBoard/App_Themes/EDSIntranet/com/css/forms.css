@@ -1,0 +1,154 @@
+/* ---------------------------------
+forms.css
+last modified:  04/29/2007 by SR
+last validated: 04/29/2007 by SR
+--------------------------------- */
+@media screen
+{
+	
+#validSummary {
+	width: 74%;
+	border: 2px solid #dc241f;
+	padding: 5px;
+	display: none;
+}
+
+#validSummary p {
+	margin-top: 0;
+	font-weight: bold;
+}
+
+#validSummary ul li {
+	margin-bottom: -10px;
+}
+	
+/* FORM STYLES*/
+form {
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	font-size: 98%;
+	width: 95%;
+	}
+	
+form#mainNavForm, form#aspnetForm
+{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+	
+form input, form textarea, form select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	margin-bottom: 0;
+}
+
+form p {
+	width: 100%;
+}
+	
+form label, form p.label {		
+	font-weight: bold;
+	display: block;
+}
+
+form li {
+	list-style: none;
+}
+
+input, select, textarea {
+	font-weight: normal;
+	}
+	
+form select {
+	width: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+optgroup { /* for drop down select menus */
+	font-style: normal;
+	margin-left: 0;
+	}
+	
+optgroup option {
+	margin-left: 0;
+	}
+	
+input {
+	text-align: left;
+	font-weight: normal;
+	padding: 2px;
+	}
+
+/* BUTTON STYLES */
+
+form p.buttons {
+	width: 80%;	
+	padding-top: 5px;
+}
+
+input.submit {
+	padding: 1px 7px;
+	text-align: center;
+	margin-left: 2px;
+	margin-top: -1px;
+	font-size: 95%;
+}
+
+/* FIELDSET STYLES */
+form fieldset {
+	width: 100%;
+	border: 1px dashed #cccccc;
+	padding: 0 10px 15px 15px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+form fieldset legend {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 115%;
+	margin: 10px 8px 5px -12px;
+	padding: 0 5px;
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+}
+
+form ul  {
+	float: left;
+	margin-top: -5px;
+	margin-left: 0;
+	padding-left: 15px;
+}
+
+form ul li {
+	line-height: 1.5;
+	margin-top: 0;
+	margin-left: -3px;
+	}
+
+form ul li label {
+	font-weight: normal;
+	margin-top: 0;
+	display: inline;
+}
+
+form ul li input {
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+form ul.inline li {
+	margin-right: 17px;
+	float: left;
+	position:relative;
+	width: auto;
+	top: 0;
+	left: 0;
+}	
+
+form fieldset p { 
+	float: left; /* helps fix <fieldset> issue in Firefox 1.5, remove possibly when fixed */
+	margin: 5px 0;
+}
+
+}

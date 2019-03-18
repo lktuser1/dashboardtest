@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"  enableLocalization="true">
+  <siteMapNode url="~/Default.aspx"  resourceKey="Home" title="Home"  description="Home page">
+    <siteMapNode url="~/Category1/Category1Main.aspx" resourceKey="CategoryOne" visible="false">
+      <siteMapNode url="~/Category1/Category1Topic1.aspx" resourceKey="CategoryOneTopicOne" />
+      <siteMapNode url="~/Category1/Category1Topic2.aspx" resourceKey="CategoryOneTopicTwo" />
+      <siteMapNode url="~/Category1/Category1QA.aspx" resourceKey="CategoryOneQA" />
+    </siteMapNode>
+    <siteMapNode url="~/Category2/Category2Main.aspx" resourceKey="CategoryTwo" visible="false"/>
+    <siteMapNode url="~/Category3/Category3Main.aspx" resourceKey="CategoryThree" visible="false">
+      <siteMapNode url="~/Category3/Category3Topic1.aspx" resourceKey="CategoryThreeTopicOne" />
+      <siteMapNode url="~/Category3/Category3Topic2.aspx" resourceKey="CategoryThreeTopicTwo" />
+      <siteMapNode url="~/Category3/Category3Glossary.aspx" resourceKey="CategoryThreeTopicThree" />
+    </siteMapNode>
+    <siteMapNode url="~/Category4/Category4Main.aspx" resourceKey="CategoryFour" visible="false">
+      <siteMapNode url="~/Category4/Category4Topic1.aspx" resourceKey="CategoryFourTopicOne" />
+      <siteMapNode url="~/Category4/Category4Topic2.aspx" resourceKey="CategoryFourTopicTwo" />
+      <siteMapNode url="~/Category4/Category4Topic3.aspx" resourceKey="CategoryFourTopicThree" />
+    </siteMapNode>
+    <siteMapNode url="~/EDSIntranet/Utility/Default.aspx" resourceKey="UtilityAbout" visible="false" title="" >
+      <siteMapNode url="~/EDSIntranet/Utility/About.aspx"  resourceKey="UtilityOverview" title="Overview" />
+      <siteMapNode url="~/EDSIntranet/Utility/Comments.aspx"  resourceKey="UtilityContact" title="Contact Us" >
+        <siteMapNode url="~/EDSIntranet/Utility/CommentsConfirm.aspx"  resourceKey="UtilityContactConfirm" title="Contact Us - Thank You" />
+      </siteMapNode>
+      <siteMapNode url="~/EDSIntranet/Utility/Privacy.aspx"  resourceKey="UtilityPrivacy" title="EDS Web Privacy and Data Protection Statement" />
+      <siteMapNode url="~/EDSIntranet/Utility/Map.aspx"  resourceKey="UtilityMap" title="Site Map" />
+      <siteMapNode url="~/EDSIntranet/Utility/Preferences.aspx"  resourceKey="UtilityPreferences" title="Preferences" />
+    </siteMapNode>
+    <siteMapNode url="~/xyz"  title="" visible="false" >
+      <siteMapNode url="~/Main.aspx" title="Dashboard" />
+      <siteMapNode url="~/MyDashboard.aspx"   title="My Dashboard" />
+      <siteMapNode url="~/Reports/DashboardReports.aspx"   title="Historical Reporting" />
+      <siteMapNode url="~/Preferences.aspx"   title="Preferences" />
+     
+      <siteMapNode url="~/DashboardHelp.aspx"   title="Help" />
+      <siteMapNode url="~/Comments.aspx"   title="Contact us">
+      <siteMapNode url="~/CommentsConfirm.aspx"  title="Contact Us - Thank You" />
+      </siteMapNode>
+      <siteMapNode url="~/About.aspx"   title="About" />
+      <siteMapNode url="~/DashboardDetails.aspx"   title=""  roles="IGNORE"/>
+    </siteMapNode>
+
+    <siteMapNode url="~/EDSIntranet/Error/GenericError.aspx" resourceKey="GenericError" visible="false" title="" />
+    <siteMapNode url="~/EDSIntranet/Error/AccessDenied.aspx" resourceKey="AccessDenied" visible="false" title="" />
+    <siteMapNode url="~/EDSIntranet/Error/PageNotFound.aspx" resourceKey="PageNotFound" visible="false" title="" />
+  </siteMapNode>
+</siteMap>

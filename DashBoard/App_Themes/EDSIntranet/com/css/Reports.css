@@ -1,0 +1,43 @@
+﻿table.reports
+{
+    width: 100%;
+    font-size: 100%;
+    margin: .85em 0;
+    padding: 3px;
+    line-height: normal;
+    border-collapse: collapse;
+}
+
+.scrollgrid
+{
+      max-width:1300px;
+      max-height:450px;
+      overflow-x:scroll;
+      overflow-y:scroll;
+      line-height:normal;
+}
+.FixedHeader {
+            position: absolute;
+            font-weight: bold;
+        }     
+.HeaderFreeze  
+{  
+position:relative ;   
+top:expression(this.offsetParent.scrollTop);  
+z-index: 10;  
+}   
+.gridHeader
+{
+POSITION: relative;
+ 
+
+/*IE5+ only*/
+
+
+top: expression(parentNode.parentNode.parentNode.parentNode.scrollTop-2);
+left:expression(parentNode.parentNode.parentNode.parentNode.scrollLeft);
+z-index: 99;
+ line-height: normal;
+}
+
+ 

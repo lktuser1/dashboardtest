@@ -1,0 +1,44 @@
+<%@ Register assembly="EDS.Intranet.ServerControls" namespace="EDS.Intranet.ServerControls"  tagprefix="edsControls" %>  
+
+<asp:DetailsView runat="server"  
+         Font-Name="Verdana"
+        Font-Size="8.35pt" Cellpadding="2"
+        FieldHeaderStyle-BackColor="#E9ECF1" 
+        FieldHeaderStyle-Font-Bold="true" 
+        FieldHeaderStyle-Width="155px"
+        FieldHeaderStyle-HorizontalAlign="Right"
+        FieldHeaderStyle-Wrap="false"
+        
+        HeaderStyle-BackColor="#5D7B9D" 
+        HeaderStyle-Font-Bold="true" 
+        HeaderStyle-ForeColor="White"
+        HeaderStyle-Width="155px" 
+        HeaderStyle-Wrap="False" 
+        HeaderStyle-HorizontalAlign="Right"
+        
+        AlternatingRowStyle-BackColor="White" 
+        AlternatingRowStyle-ForeColor="#284775"
+        FooterStyle-BackColor="#5D7B9D" 
+        FooterStyle-Font-Bold="True" 
+        FooterStyle-ForeColor="White"
+        CommandRowStyle-BackColor="#5D7B9D" 
+        CommandRowStyle-ForeColor="White"
+        CommandRowStyle-Font-Bold="True" 
+        EditRowStyle-BackColor="#E2DED6" 
+         EditRowStyle-Wrap="false"
+        RowStyle-BackColor="#F7F6F3" 
+        RowStyle-ForeColor="#333333"
+/>   
+
+<edsControls:edsDetailsView runat="server" CssClass="EDSDetailView">
+   <AlternatingRowStyle CssClass="AlternatingRowStyle" />
+   <RowStyle CssClass="RowStyle" />
+   <FieldHeaderStyle CssClass="FieldHeaderStyle" />
+   <HeaderStyle CssClass="HeaderStyle" />
+   <FooterStyle CssClass="FooterStyle" />
+   <CommandRowStyle CssClass="CommandRowStyle" />
+   <EditRowStyle CssClass="EditRowStyle" />
+   <RowStyle CssClass="RowStyle" />
+</edsControls:edsDetailsView>
+
+

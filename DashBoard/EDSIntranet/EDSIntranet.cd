@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="EDS.Intranet.Base.PageBase" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Base\PageBase.cs</FileName>
+      <HashCode>BIAAIgAAQACYAAKAAIGCAQACHAAgAAQAAgECAgBAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Base.CorePageBase" Collapsed="true">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Base\CorePageBase.cs</FileName>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Base.HomePageBase" Collapsed="true">
+    <Position X="16.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Base\HomePageBase.cs</FileName>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Base.UtilityPageBase" Collapsed="true">
+    <Position X="21.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Base\UtilityPageBase.cs</FileName>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAIAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDSIntranet.Default">
+    <Position X="16.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>Default.aspx.cs</FileName>
+      <HashCode>AAAAgAAAAAAAABIAAAAAAAACAAAAAAAAAAAAAAAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Utility.About">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Utility\About.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Utility.Map">
+    <Position X="26" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Utility\Map.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Utility.Privacy">
+    <Position X="23.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Utility\Privacy.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Utility.CommentsConfirm">
+    <Position X="19.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Utility\CommentsConfirm.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Base.ErrorPageBase" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Base\ErrorPageBase.cs</FileName>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Error.AccessDenied">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Error\AccessDenied.aspx.cs</FileName>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAACACAAAAAAQAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Error.GenericError">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Error\GenericError.aspx.cs</FileName>
+      <HashCode>AAAgAAAAAEAAAAAAAAAAAAQCEAAAAAQBABAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Error.PageNotFound">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Error\PageNotFound.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAQBAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDSIntranet.Category1.Category1Main">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Category1\Category1Main.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDSIntranet.Category2.Category2Main">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Category2\Category2Main.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDSIntranet.Category3.Category3Main">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Category3\Category3Main.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDSIntranet.Category4.Category4Main">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Category4\Category4Main.aspx.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDSIntranet.EDSIntranet.Utility.Comments">
+    <Position X="28.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Utility\Comments.aspx.cs</FileName>
+      <HashCode>AAIAAQAIAgAkgECAAIQIIAACABCQIAAAIABAABAgAgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDSIntranet.EDSIntranet.Utility.Preferences">
+    <Position X="30.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>EDSIntranet\Utility\Preferences.aspx.cs</FileName>
+      <HashCode>RAgAAAAIAAAIAAiAAAAAAAACAAAAAAAAAAAAAAIAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

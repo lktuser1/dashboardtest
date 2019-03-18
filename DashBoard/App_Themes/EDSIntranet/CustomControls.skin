@@ -1,0 +1,4 @@
+<%@ Register TagPrefix="edsControls" 
+             Namespace="EDS.Intranet.ServerControls" 
+             Assembly="EDS.Intranet.ServerControls" %>  
+             

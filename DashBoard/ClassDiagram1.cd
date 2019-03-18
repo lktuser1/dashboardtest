@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Dashboard.DashboardReports">
+    <Position X="6.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EIAwUAAgAAQAABAEkAEgBhAAsABQQEREgCMkDIoCIEE=</HashCode>
+      <FileName>DashboardReports.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard.DashboardDetails">
+    <Position X="3.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>QIABEBIABABAACAAAAgAAAAAIABAAAAAAAAAAAIAAAE=</HashCode>
+      <FileName>DashboardDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard.Main">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAKAA=</HashCode>
+      <FileName>Main.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Common.SQLHelper">
+    <Position X="0.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ICQAABAEAAAgAAIAAAAAAAgAggEAAAQAAAAAAAAACAA=</HashCode>
+      <FileName>EDSIntranet\Common\SQLHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Reports.ReportsHelper">
+    <Position X="3.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAIAAAAAAAAAAAAAAggAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EDSIntranet\Reports\ReportsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Reports.Monitors">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAABAgAAAEAACAAAAAAIAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>EDSIntranet\Reports\MonitorDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Reports.MonitorAll">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACCAAAAAAAAABCAAAAAAAAIAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>EDSIntranet\Reports\MonitorDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Reports.MonitorDataAccessLayer">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>EDSIntranet\Reports\MonitorDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Reports.SAAlert">
+    <Position X="11" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAEAAAAAAABAAAAAgAAAIAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>EDSIntranet\Reports\SAAlertDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Reports.SMAlert">
+    <Position X="11" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIBAAAAAAAAQgAAAAAAAAAAAASAQAAAAQAAA=</HashCode>
+      <FileName>EDSIntranet\Reports\SAAlertDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDS.Intranet.Reports.SAAlertDataAccessLayer">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAEAAAA=</HashCode>
+      <FileName>EDSIntranet\Reports\SAAlertDataAccessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
